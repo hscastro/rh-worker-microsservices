@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hscastro</groupId>
-	<artifactId>Payroll</artifactId>
+	<artifactId>rh-payroll</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Payroll</name>
-	<description> project payroll for Spring Boot</description>
+	<name>rh-payroll</name>
+	<description> project rh-payroll for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
