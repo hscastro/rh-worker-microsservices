@@ -58,7 +58,7 @@ public class WorkerResource {
 	
 	@GetMapping(value = "/configs")	
 	public ResponseEntity<Void> getConfigs(){
-		logger.info("CONFIG = "+testConfig);
+		//logger.info("CONFIG = "+testConfig);
 		return ResponseEntity.noContent().build();		
 	}
 	
