@@ -22,6 +22,7 @@ public class UserResource {
 	public ResponseEntity<User> findByEmail(@RequestParam String email){
 		try {
 			 User user = service.findByEmail(email);
+			 System.out.println("EMAIL: "+user);
 			 return ResponseEntity.ok(user);
 			
 		} catch (IllegalArgumentException e) {
