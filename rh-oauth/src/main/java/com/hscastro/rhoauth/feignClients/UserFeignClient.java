@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.hscastro.rhoauth.entities.User;
 
 @Component
-@FeignClient(name = "rh-oauth", path = "/users")
+@FeignClient(name = "rh-user", path = "/users")
 public interface UserFeignClient {
 
 	@GetMapping(value = "/search")	

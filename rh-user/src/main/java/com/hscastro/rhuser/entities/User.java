@@ -25,10 +25,10 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "name", nullable = true, length = 120)
+	@Column(name = "name", nullable = true, length = 255)
 	private String name;
 	
-	@Column(name = "email", nullable = true, unique = true, length = 120)
+	@Column(name = "email", nullable = true, unique = true, length = 255)
 	private String email;
 	
 	private String password;
