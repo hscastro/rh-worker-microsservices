@@ -1,15 +1,9 @@
-# rh-worker-microsservices
+Criando e testando containers Docker
+Criar rede docker para sistema hr
+docker network create hr-net
+Testando perfil dev com Postgresql no Docker
+docker pull postgres:12-alpine
 
-<h3> Em desenvolvimento,...</h3>
+docker run -p 5432:5432 --name hr-worker-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_worker postgres:12-alpine
 
-<h2>Microsserviços Java com Spring Boot e Spring Cloud</h2>
-
-<h2>Fase 1: Comunicação simples, Feign, Ribbon</h2>
-
-1.1 Criar projeto rh-worker<br/>
-1.2 Implementar o projeto rh-worker com seus endpoints<br/>
-1.3 Criar projeto hr-payroll<br/>
-1.4 Implementar projeto hr-payroll (mock)<br/>
-1.5 RestTemplate<br/>
-1.6 Feign<br/>
-1.7 Ribbon load balancing<br/>
+docker run -p 5432:5432 --name hr-user-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_user postgres:12-alpine
