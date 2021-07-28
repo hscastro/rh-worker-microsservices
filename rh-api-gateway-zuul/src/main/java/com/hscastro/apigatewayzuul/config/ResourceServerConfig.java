@@ -31,7 +31,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	
 	private static String[] OPERATOR = {"/rh-worker/**"}; 
 	
-	private static String[] ADMIN = {"/rh-payroll/**", "/rh-user/**"}; 
+	private static String[] ADMIN = {"/rh-payroll/**", "/rh-user/**", "/actuator/**", "/rh-worker/actuator**", "/rh-oauth/actuator**"}; 
 	
 	
 	@Override
