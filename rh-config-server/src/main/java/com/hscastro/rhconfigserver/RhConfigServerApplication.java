@@ -9,8 +9,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class RhConfigServerApplication implements CommandLineRunner {
-	
+public class RhConfigServerApplication  {
+//public class RhConfigServerApplication implements CommandLineRunner {	
 	//@Value("${spring.cloud.config.server.git.username}")
 	//private String username;
 	
@@ -19,9 +19,9 @@ public class RhConfigServerApplication implements CommandLineRunner {
 		SpringApplication.run(RhConfigServerApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		//System.out.println("USERNAME = "+username);
-	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		//System.out.println("USERNAME = "+username);
+//	}
 
 }
