@@ -1,6 +1,6 @@
 Criando e testando containers Docker
 Criar rede docker para sistema hr
-docker network create hr-net
+docker network create rh-net
 Testando perfil dev com Postgresql no Docker
 
 
